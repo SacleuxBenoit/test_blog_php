@@ -19,6 +19,11 @@
         </p>
 
         <p>
+            <label for="descArticle">Description :</label>
+            <input type="text" id="descArticle" name="descArticle">
+        </p>
+
+        <p>
             <label for="contentArticle">Contenu :</label>
             <input type="text" id="contentArticle" name="contentArticle">
         </p>
