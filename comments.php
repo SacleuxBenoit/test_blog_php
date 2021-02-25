@@ -36,8 +36,8 @@ include('infos_admin_database.php');
         while($display_comment = $get_comments->fetch()){
             ?>
                 <div class="comments">
-                <p><strong><?php echo $display_comment['auteur']?></strong></p>
-                <p><?php echo $display_comment['commentaire'] ?></p>
+                <p><strong><?php echo htmlspecialchars($display_comment['auteur'])?></strong></p>
+                <p><?php echo htmlspecialchars($display_comment['commentaire'])?></p>
                 </div>
             <?php
         }
@@ -46,7 +46,7 @@ include('infos_admin_database.php');
     <div>
         <h3>Ajouter un commentaire</h3>
         
-        <form action="addComments_database.php?billet=<?php echo $_GET['billet']?>" method="POST">
+        <form action="addComments_database.php?billet=<?php echo htmlspecialchars($_GET['billet'])?>" method="POST">
             <p>
                 <label for="author">Auteur :</label>
                 <input type="text" name="author" id="author">
