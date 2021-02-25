@@ -14,13 +14,13 @@
     
     <div>
         <p>
-            <label for="title">Titre :</label>
-            <input type="text" id="title" name="title">
+            <label for="titleArticle">Titre :</label>
+            <input type="text" id="titleArticle" name="titleArticle">
         </p>
 
         <p>
-            <label for="content">Contenu :</label>
-            <input type="text" id="content" name="content">
+            <label for="contentArticle">Contenu :</label>
+            <input type="text" id="contentArticle" name="contentArticle">
         </p>
 
         <input type="submit" value="Submit">
