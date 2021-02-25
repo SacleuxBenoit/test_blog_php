@@ -8,7 +8,7 @@ if(!empty($_POST['author']) && !empty($_POST['comments'])){
     $send_comments->bindParam(':author', $_POST['author']);
     $send_comments->bindParam(':comments', $_POST['comments']);
     $send_comments->execute();
-    header('Location: ./comments.php');
+    header('Location: ./index.php');
 }
 
 ?>
