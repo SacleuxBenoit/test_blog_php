@@ -10,7 +10,7 @@
 <body>
     <h3>Création d'article :</h3>
 
-    <form action="#" method="post">
+    <form action="addArticles_database.php" method="post">
     
     <div>
         <p>
