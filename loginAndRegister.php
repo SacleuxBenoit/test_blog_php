@@ -11,13 +11,35 @@
         <div>
             <h3>Login</h3>
             <p>
-                <label for="userName">Pseudo :</label>
-                <input type="text" name="userName" id="userName">
+                <label for="loginPseudo">Pseudo :</label>
+                <input type="text" name="loginPseudo" id="loginPseudo">
             </p>
 
             <p>
-                <label for="password">Mot de passe :</label>
-                <input type="password" name="password" id="password">
+                <label for="loginPassword">Mot de passe :</label>
+                <input type="password" name="loginPassword" id="loginPassword">
+            </p>
+
+            <input type="submit" value="Sumbit">
+        </div>
+    </form>
+
+    <form action="#" method="post">
+        <div>
+            <h3>Register</h3>
+            <p>
+                <label for="registerPseudo">Register :</label>
+                <input type="text" name="registerPseudo" id="registerPseudo">
+            </p>
+
+            <p>
+                <label for="registerPassword">Mot de passe :</label>
+                <input type="password" name="registerPassword" id="registerPassword">
+            </p>
+
+            <p>
+                <label for="confirmedRegisterPassword">confirmer le mot de passe :</label>
+                <input type="password" name="confirmedRegisterPassword" id="confirmedRegisterPassword">
             </p>
 
             <input type="submit" value="Sumbit">
