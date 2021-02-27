@@ -18,9 +18,9 @@ include('./database/connection_database.php');
 
         while($content = $get_ticket->fetch()){
         ?>
-        
+
             <div class="container">
-                <h3><a href="comments.php?billet=<?php echo htmlspecialchars($content['id']);?>"><?php echo htmlspecialchars($content['titre']) ?></a></h3>
+                <h3><a href="./layouts/comments.php?billet=<?php echo htmlspecialchars($content['id']);?>"><?php echo htmlspecialchars($content['titre']) ?></a></h3>
                 <p class="content"><?php echo htmlspecialchars($content['descArticles']) ?></p>
             </div>
 
