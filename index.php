@@ -14,6 +14,7 @@ include('./database/connection_database.php');
 </head>
 <body>
     <?php
+        include('./components/header.php');
         $get_ticket = $bdd->query('SELECT id,titre,contenu,descArticles FROM billets');
 
         while($content = $get_ticket->fetch()){
