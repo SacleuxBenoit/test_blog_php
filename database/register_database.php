@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('infos_admin_database.php');
+include('../infos_admin_database.php');
 include('connection_database.php');
 
 $find_pseudo_database = $bdd->prepare('SELECT pseudo FROM user WHERE pseudo = :pseudo');
@@ -15,9 +15,9 @@ if(!empty($_POST['registerPseudo']) && !empty($_POST['registerPassword']) && $_P
     $create_user->bindParam(':pseudo', $_POST['registerPseudo']);
     $create_user->bindParam(':passwordUser', $password_hash);
     $create_user->execute();
-    header('Location: ./loginAndRegister.php');
+    header('Location: ../loginAndRegister.php');
 }else{
-    header('Location: ./loginAndRegister.php');
+    header('Location: ../loginAndRegister.php');
 }
 
 ?>

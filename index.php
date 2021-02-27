@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('infos_admin_database.php');
+include('./database/connection_database.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +14,6 @@ include('infos_admin_database.php');
 </head>
 <body>
     <?php
-        include('connection_database.php');
-
         $get_ticket = $bdd->query('SELECT id,titre,contenu,descArticles FROM billets');
 
         while($content = $get_ticket->fetch()){

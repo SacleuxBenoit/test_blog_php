@@ -1,5 +1,5 @@
 <?php 
-include('infos_admin_database.php');
+include('../infos_admin_database.php');
 include('connection_database.php');
 
 if(!empty($_POST['author']) && !empty($_POST['comments'])){
@@ -8,7 +8,7 @@ if(!empty($_POST['author']) && !empty($_POST['comments'])){
     $send_comments->bindParam(':author', $_POST['author']);
     $send_comments->bindParam(':comments', $_POST['comments']);
     $send_comments->execute();
-    header('Location: ./index.php');
+    header('Location: ../index.php');
 }
 
 ?>
