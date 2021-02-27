@@ -15,9 +15,9 @@ if(!empty($_POST['registerPseudo']) && !empty($_POST['registerPassword']) && $_P
     $create_user->bindParam(':pseudo', $_POST['registerPseudo']);
     $create_user->bindParam(':passwordUser', $password_hash);
     $create_user->execute();
-    header('Location: ../loginAndRegister.php');
+    header('Location: ../layouts//loginAndRegister.php');
 }else{
-    header('Location: ../loginAndRegister.php');
+    header('Location: ../layouts/loginAndRegister.php');
 }
 
 ?>

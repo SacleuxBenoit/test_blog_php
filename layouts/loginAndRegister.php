@@ -7,7 +7,7 @@
     <title>Login / Register</title>
 </head>
 <body>
-    <form action="./database/login_database.php" method="post">
+    <form action="../database/login_database.php" method="post">
         <div>
             <h3>Login</h3>
             <p>
@@ -24,7 +24,7 @@
         </div>
     </form>
 
-    <form action="./database/register_database.php" method="post">
+    <form action="../database/register_database.php" method="post">
         <div>
             <h3>Register</h3>
             <p>

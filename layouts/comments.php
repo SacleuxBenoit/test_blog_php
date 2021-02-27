@@ -1,7 +1,7 @@
 <?php
 session_start();
-include('infos_admin_database.php');
-include('./database/connection_database.php');
+include('../infos_admin_database.php');
+include('../database/connection_database.php');
 
 ?>
 <!DOCTYPE html>
@@ -46,7 +46,7 @@ include('./database/connection_database.php');
     <div>
         <h3>Ajouter un commentaire</h3>
         
-        <form action="./database/addComments_database.php?billet=<?php echo htmlspecialchars($_GET['billet'])?>" method="POST">
+        <form action="../database/addComments_database.php?billet=<?php echo htmlspecialchars($_GET['billet'])?>" method="POST">
             <p>
                 <label for="author">Auteur :</label>
                 <input type="text" name="author" id="author">
