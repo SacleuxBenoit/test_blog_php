@@ -7,6 +7,9 @@
     <title>Login / Register</title>
 </head>
 <body>
+    <?php
+        include('../components/header.php');
+    ?>
     <form action="../database/login_database.php" method="post">
         <div>
             <h3>Login</h3>

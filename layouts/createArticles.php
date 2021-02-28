@@ -8,6 +8,9 @@
     <title>Create Articles</title>
 </head>
 <body>
+    <?php
+        include('../components/header.php');
+    ?>
     <h3>Création d'article :</h3>
 
     <form action="../database/addArticles_database.php" method="post">
