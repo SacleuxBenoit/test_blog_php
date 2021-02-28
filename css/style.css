@@ -1,4 +1,4 @@
-h3,.container{
+body{
     text-align: center;
 }
 
@@ -14,8 +14,7 @@ h3{
     background-color: rgb(199, 194, 194);
 }
 
-.content{
-    color: black;
+.descArticles{
     margin-top: 0px;
 }
 

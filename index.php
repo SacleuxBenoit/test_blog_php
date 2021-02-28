@@ -22,7 +22,7 @@ include('./database/connection_database.php');
 
             <div class="container">
                 <h3><a href="./layouts/articles.php?billet=<?php echo htmlspecialchars($content['id']);?>"><?php echo htmlspecialchars($content['titre']) ?></a></h3>
-                <p class="content"><?php echo htmlspecialchars($content['descArticles']) ?></p>
+                <p class="descArticles"><?php echo htmlspecialchars($content['descArticles']) ?></p>
             </div>
 
         <?php
