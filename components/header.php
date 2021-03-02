@@ -17,6 +17,7 @@
         <ul>
             <li><a href="http://localhost:8888/test/test_blog_php/layouts/loginAndRegister.php">Login / register</a></li>
             <li><a href="http://localhost:8888/test/test_blog_php/layouts/createArticles.php">Create articles</a></li>
+            <li><a href="../database/logout_database.php">Log out</a></li>
         </ul>
     </div>
 
