@@ -2,11 +2,11 @@ body{
     text-align: center;
 }
 
-h3{
+/*h3{
     color:white;
     font-size:0.9em;
-   /* margin-bottom:0px;*/
-}
+    margin-bottom:0px;
+}*/
 
 .container{
     width: 50%;
@@ -24,4 +24,11 @@ a:link{
 
 li{
     list-style-type: none;
+}
+
+/* COMMENTS */
+
+.comments{
+    border: 1px solid black;
+    border-bottom: none;
 }

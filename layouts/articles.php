@@ -26,8 +26,6 @@ include('../database/connection_database.php');
 
         <p><?php echo htmlspecialchars($content['contenu']) ?></p>
     </div>
-    
-    <p>Commentaires :</p>
 
     <?php 
         $get_ticket->closeCursor();
@@ -44,7 +42,11 @@ include('../database/connection_database.php');
         }
     ?>
 
-    <div>
+    <?php
+        if(isset($_SESSION['loginPseudo'])){
+    ?>
+
+    <div class="comments">
         <h3>Ajouter un commentaire</h3>
         
         <form action="../database/addComments_database.php?billet=<?php echo htmlspecialchars($_GET['billet'])?>" method="POST">
@@ -61,5 +63,18 @@ include('../database/connection_database.php');
             <input type="submit" value="Submit">
         </form>
     </div> 
+
+    <?php
+        }
+    else{
+    ?>
+        <div class="comments">
+            <h3>Ajouter un commentaire</h3>
+            <p>Merci de vous <a href="http://localhost:8888/test/test_blog_php/layouts/loginAndRegister.php"">connecter</a> pour écrire un commentaire</p>    
+        </div>
+    <?php
+        }
+    ?>
+
 </body>
 </html>
