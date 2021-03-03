@@ -15,7 +15,7 @@
 
     <form action="../database/addArticles_database.php" method="post">
     
-    <div>
+    <div class="container">
         <p>
             <label for="titleArticle">Titre :</label>
             <input type="text" id="titleArticle" name="titleArticle">
