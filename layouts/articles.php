@@ -70,7 +70,7 @@ include('../database/connection_database.php');
     ?>
         <div class="comments">
             <h3>Ajouter un commentaire</h3>
-            <p>Merci de vous <a href="http://localhost:8888/test/test_blog_php/layouts/loginAndRegister.php"">connecter</a> pour écrire un commentaire</p>    
+            <p>Merci de vous <a href="http://localhost:8888/test/test_blog_php/layouts/loginAndRegister.php">connecter</a> pour écrire un commentaire</p>    
         </div>
     <?php
         }
