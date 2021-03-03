@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Login / Register</title>
 </head>
 <body>
     <?php
         include('../components/header.php');
     ?>
+<div class="container">
     <form action="../database/login_database.php" method="post">
-        <div>
+        <div class="login">
             <h3>Login</h3>
             <p>
                 <label for="loginPseudo">Pseudo :</label>
@@ -28,7 +30,7 @@
     </form>
 
     <form action="../database/register_database.php" method="post">
-        <div>
+        <div class="register">
             <h3>Register</h3>
             <p>
                 <label for="registerPseudo">Pseudo :</label>
@@ -48,5 +50,7 @@
             <input type="submit" value="Sumbit">
         </div>
     </form>
+
+</div>
 </body>
 </html>
