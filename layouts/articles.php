@@ -21,7 +21,7 @@ include('../database/connection_database.php');
         $content = $get_ticket->fetch();
     ?>
 
-    <div>
+    <div class="container">
         <h3><?php echo htmlspecialchars($content['titre']) ?></h3>
 
         <p><?php echo htmlspecialchars($content['contenu']) ?></p>
