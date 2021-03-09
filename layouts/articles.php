@@ -51,11 +51,6 @@ include('../database/connection_database.php');
         
         <form action="../database/addComments_database.php?billet=<?php echo htmlspecialchars($_GET['billet'])?>" method="POST">
             <p>
-                <label for="author">Auteur :</label>
-                <input type="text" name="author" id="author">
-            </p>
-
-            <p>
                 <label for="comments">Commentaire :</label>
                 <input type="text" name="comments" id="comments">
             </p>
